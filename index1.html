@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Aleon Solution</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin:0;
+			background-color: rgb(247, 247, 247);
+
+        }
+        .navbar-brand{
+            font-size: x-large;
+
+
+        }
+        .nav-link,.nav-item{
+            font-size: large;
+            padding: 0.5rem ;
+            color: black;
+        }
+        .nav-link:hover {
+ color: orange;
+}
+
+
+    </style>
+   
+  </head>    
+<body>
+  <!-----------------to nav-->
+  <!--<header class="p-2" style="background-color: black;" >
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ml-auto">
+      
+        
+        <a class="link" href="#" style="font-weight: bolder;  color:black;text-decoration: none;margin-left: 1rem;">+9999999999</a>
+
+     
+          <a class="link" href="#" style="color:white;font-weight: bolder;border:none;text-decoration: none;margin-left: 1rem;">Contact </a>
+    
+          <a class="link" href="#" style="color:white;font-weight: bolder;border:none;text-decoration: none;margin-left: 1rem;">Partner login </a>
+
+
+          <a class="link" href="#"style="color:white;font-weight: bolder;border:none;text-decoration: none;margin-left: 1rem;">Admin Login</a>
+      
+      </div> 
+
+    
+    </div>
+  </header>-->
+  <!----top end nav-->
+
+
+  <nav class="navbar fixed-top  navbar-expand-lg shadow-sm" style=" position: sticky; background-color: white;" >
+    <a class="navbar-brand" href="#"><h1><span class="text-primary">A</span>L<span class="text-danger">E</span>O<span class="text-primary">N<span class="text-danger">&nbsp;Solution</span></h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<i class="fa fa-bars"></i>      
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contact">Contact</a>
+        </li>
+        <!--<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>-->
+        
+      </ul>   
+      <!--<ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" style="border:1px solid black;border-radius: 1rem;background-color: rgba(255, 1, 1, 0.911);color:white;font-weight: bolder;border:none;">Login Here </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"style="border: 1px solid black;border-radius:1rem;   background-color: rgba(255, 1, 1, 0.911);color:white;font-weight: bolder;border:none;">Sign Up</a>
+        </li>
+        </ul> -->
+    </div>
+  </nav>
+       
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+<div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <img src="https://cdn.pixabay.com/photo/2019/01/30/07/45/web-3963945_1280.jpg" class="d-block  "  alt="..." style="width: 100%;height: 35em;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.pixabay.com/photo/2019/12/02/10/34/digitization-4667376_1280.jpg" alt="..."style="width: 100%;height: 35em;" >
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.pixabay.com/photo/2018/06/19/10/01/internet-3484137_1280.jpg" alt="..."style="width: 100%;height: 35em;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+  <!---------service--------->
+  <style>
+    .card{
+      width: 100%;
+      height: 100%;
+    }
+    .inner{overflow: hidden;
+    }
+    .inner img{
+      transition: all 1.5s ease;
+    }
+    .inner:hover img{transform: scale(1.5);}
+  </style>
+
+
+ <section style="background-color: cornflowerblue;" id="Features" class=""> 
+  <div class="container" data-aos="fade-up"
+  data-aos-duration="3000">
+    <h1 style="text-align: center;margin-bottom: 2rem;margin-top: 2rem;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"data-aos="fade-up"
+    data-aos-duration="3000">WHY CHOOSE OUR SERVICES?
+    </h1><hr style="margin-top:-15px;">
+    <div class="row mt-2 ">
+  <div class="col-md-6 col-sm-12 col-lg-3 col-xl-3 mt-4"data-aos="fade-up"
+      data-aos-duration="3000">
+
+          <div class="card" style="width:100%"data-aos="fade-up"
+          data-aos-duration="3000">
+            <div class="inner">            <img class="card-img-top" src="https://www.verizon.com/about/sites/default/files/styles/vzc_news_xlarge/public/news-media/1280x720-article-network-bandwidth-image.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Bandwidth on Demand
+              </h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+      </div>
+
+      <div class="col-md-6 col-sm-12 col-lg-3 col-xl-3 mt-4">
+
+        <div class="card" style="width:100%"data-aos="fade-up"
+        data-aos-duration="3000">
+          <div class="inner">
+          <img class="card-img-top" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUTExMVFRUVFxgVGBcXGBoWGBcXFhUXGBYXFRcYHSggGBolGxgWIjMhJikrLi4uFx8zODMtNyguLisBCgoKDg0OGxAQGy0lICUtLS0uLi0tLS0tLy0tLS0tLS0tLS8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKkBKgMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAFBgMEBwIAAQj/xABIEAACAQIFAQYDBgMFBgMJAQABAhEAAwQFEiExQQYTIlFhcTKBkRQjQlKhsQdi0RWSweHwM3KCg6KyU5PxFiREY3OjwtLTQ//EABoBAAMBAQEBAAAAAAAAAAAAAAECAwAEBgX/xAAuEQACAgICAQIEBAcBAAAAAAAAAQIRAyESMUEEURQiYfATcZHhBVKBobHB8RX/2gAMAwEAAhEDEQA/AMTPNdCvkb1IluiY+Cp8LhXuMFRSzHgASa93NH8sC9xb1ahaN0i8bca9Pg89uNUatpp4Rtkss3FaAF7DOjFWUqR0Oxr3cGmrMMEThyUJuWw8oSPvFSG1Bx0A8EkSsnY1Hi71g2LISyyuNQuXCSVuGZEDgQPKmlCmJjzckL2HtmatvRS7ftOiIF0sDu0k8kRt0gSNuZ33ow/Y279l+06D3QbT3sjnVo+CZ0attXPpRUQSyLyK9g1VxfNX8IFW5DeJQSNuvMdRtMdRVrLcoGJvi2uwZoEkCF3JLE7QFBJ9qNWZyS2CcBzWhYJknDsvhXwzJkSrjWfTZSfmPOrS9j7SW1e00uFJKsFAbadJB42EQxaTHFAc5UWu7e2NIuAnTyAVIG3Xfb2I26QVGkReRTYc7PXLdm0yXhZusbxcHvLJhCjKQGLz1BjpEzVS5himGth2ViguTpYON3RgJBI4U/UedC8PdtE6mtrJ5Pn9Cv7T70fTDd5bJHTZQB4FPm0DxkflA8iTXRiRDLkS2Z5iNCNvyP6VyMzjii+adk3AZ0YuBJMqVYeZ0np60sthyDXNk5RZ14lCau7CuHzNyYFO/Zx3gE7lgSoJgaRzcc9F2P0+q1kGBtNYhtXfXLqoD0CcuffimW0rMqJbEPiWAA4i2H0WknoNSkn/AHV8qaCZHJxvRZzDtFcUxaR77DbVpYr7Ii8fP6CjGIv5th7AvvaRhsXtoAbloH4TcRRIn0JjrFWczy/E4YYDB2cS9nU19r72xpJ0Q7ET8UKCATztRi7cuOtyyL95HRktFle6XS5cQuCbjPouBVEt4BwYpWx1GKFjB9s+++7uJoc/guA6W9Bq3Q+U7eoodm+AsONQWATBB5VuqmrlzLL+PyuziXul79j7QzF9y9pWEjX5gCQDzJoGmMN20rTvcDWm9biKGtP7kED/AIW86yYJ4lVoWM2ybSTppcu2CDFNeExT3DpG53meAAJJJ6AAGp8Rka3BNtgxAlhBERyRI3FF4+StAx5+D4zFvA4Od6dhgDaTD+MMCFIWfhm4SZHSWC0Hw+H0giJq9bvfcjwEFWI1yT4TuAB5hhPsDSqNF8krphPJ8tOY4bD4RCMODfdbjCT3pS3r13B+Jt4E8dKjwv8ACZnxeJsDFR9mVG1Bd2LLq2E7RUNrEW1tFe5vPFw3vuLvdMhZQpiFJZCBII44NEOyfbW1hGuizg77vfgMXv8AeMYBAjwT1oNWFOihisRps4axo1MVd3vMZcgMQFA4A2pNzZYdvl+1Oec4u2QpW2U0L3YXV3jCWLFSwABuMdtI+ETO+wU8wy+9JlCXPjYDkT5Dkx1jjrRa0JGSsEV50r7NeZ6kdVnFsVbUCKphq+97WAXIWvErVPXXzXQCWXYVxqFQFq+aqxjnTvUgNEVwgrh8NT8ReRDh/EyqTEkCaM5rhvsbI1m7qJAPhOw6kHz9vSqWYtaKWxbsm26iHfWW7wwN9JHg3B2H5vSTUwyK5PePpjznjrEAyeNtqKaSryTlFyab69hl7IWzfuPeuMzNbK6dztIc7AEb+CAON+DxWgYrLPG1ghXdUL3LQ3KKoB8RbwNM7KBzxGxrNuxOZLbdkafvCoBE8gOsbSQTr2IB3HrI0VcZ3Ra4CLYa0bVwgBe8lj4nb4SwmAQTx1NdON3HVX5OH1Cqe7rxQh9o8vTD3lCDkao3IBDMu07xtxJ55NXB2iv9x3WpgmrVoLfdapmY5530zE7x0r5nWIXEXVZROxQTIHxFifOIb04JgcV8a0bzJbsWNbxpgDVqMnxN0HTYQBEzzSSpN0VjuK5dgbuiWkgCSTt8Pyozkl23bbxgT4xpLaA6vbKEB4IUwTuatHKXtITct2yLjBQ9u4lxEcSSs2iVmD8LbwuxoRmVqFmIgwR0nzn/AF70FoZ/MqGbBZgO8M4e4oQgy95QFIEJqPchm22h2P1qLN8IHW0quulAQXY6Ulj0J5oFewOIsulu/qEKrqpmArgEQDx5H1BHSnDA4S1exEX2CIulZiQi6Tvp45A3PnVYpUc07i9MWMa15ltIwUpblVZAIMmd2HJ96euzNkW7a94SumSygamAJQ7pBjYHkbTVG9gO5uMMOo7tlebg3kgHTH/hkwDGx9SKsZFgiYhtJ8+KMaQsm5x14LmbDDhGNhnVdMHWTu2m4BBIjl12/lrPE7i2t037LXGZYtkNpVWPLMANyOeY2iN5D7i8IbjQzSfWgvaLINM29HjBG8yQI+GBzP8AjU514K41/N5IcJaw4w1hkP3hdlI8tSwP1NWckDNiMCRx93/033B/afnQ/JckKWnW6GUyrWmn4XU+XXb26U/ZXkqoLbmEKuLiI3hMmC67+ekR7etBXViOUb4oH3MfdGNa3oe8FvXGt6RquWpc6ipO2gjlDsR5c0dOOnvE1LeIUzat3GYvAgBEZQGJHI1tEcNxQ7OM8wRDo1u8neMdYR1QuwbxBmIk79JoDisXlYH+yxQiDIuIIg8gxtFIzpjxfTJshxF269+3o7q0mExKpZWQqFl31Dq53ljv7cUq5Tl727Sagd8QhHtbQ6v+9a0TLc8s3QzYfDX7txrbJ3rsg0q+pR3r7SPDO8kAVzm6tdtaBYggFFOw1ahDPEyBz68eVMlbJzm4rWzGMDeCFi4bSQVJHI1KRO/MHpTTg8egtqHZHOnu07pYcBtQ8YgaviPMk7b0ZxGTlbRsXLXjbh48QmQDPUf0jakDs6zJiQp4i5+lpzTt8WkTjWVSk/8Ao0v2Ve6kh1UAFogyx66vI7cCY/WhOLw97Dr3VwkgwwHSTtI3g9RIrRModRaxCXbuHW5eJWx3jhWsgSFMESoPI0zMDilLtgbjWrSky++rgbhVkk9On6Vpx7rwbFlppPpl/CpgxhHLXSL4caLMShWRLAxPGol9QiBx1UsVnDSykrEkQ1y4VifLXuPrXeE7PX3QbqLbmQWbShIMT5/txO9Vcx7NXraM8KyLyVaV3mCCdxx/U0jUqui0Zw5VYf7MuXuWlsWjib7k6dglu2i/GUUwJgHmBPnTR/FfDuxsYmxY7u3bGm84CrDsRpRhySp1CYgExPSssyzNHsHTvpHkdDqDzocdD5H5RM1cvdp9I0q929P/AIzEr6eDUZ+Z9I60qku2F45W68g3tVAxd4D83+An9aG4W3rdU41ECfc0Z/sXE4rVejUzmfVp8gPoKqWraYdw1w67imRbUiAQf/8ARxt/wrPuppK3b6OhTTi1F7HTI8hwrYbGONM4aIFwEte5nQZGjjoDzvSdnWXohRrc6bi6wDyu5BHrBHNPeU/xJZLaaHS0Leoi33KsZcy2hvUk8yfek3PczOJfvAmlRMQNtzJ42G5PEVXJXHx9DmwqSn5+tggWq81mpwK9caoUdpRcVxUl0VHFKMMa2jUgw58qZ7WBtiu7mHt+ldNI5+QOs9nENpblwsTcnQqxwGK7k9ZER6jnio73ZdSpL2msKp06yG1apIjQxljIIiF3EU64XGJYTC3Y1C2xMDzF0sR7xH1FdZr/ABAt3bT2hYcMyBQZUzAUbEE6l2niJ5IrNL2OfnJt7Mtut3LG3aECN7ky7qRI3/ApBHhHnBLUwYbCWTaSNWvfVMafSKUsyu/eypmFQSDIlbagwRzuDTJhc/sDC6CPvNt59NxpjkmDq9KSLSbLStxQay/BWoMzqkaYiI1Lqn5eX9aa2yh2uJh7LCxhHfT3lppa8HGkd4Q3iJHQgAajtWU4TOW23IIMg8jpIPptRjvbitbu2bhD/GCARoYE7eR4BkecRNPyvolKDT2N2AyD7O+JtOQ2EYsDcYhSHtatBVZktrlYgzJ96Ws6W2QAsyANUx8XiiI6adNUnuN95euuTcnVLBvGxMkzwsc9SelQjGpe8MhbsyXIhGO/xD8B/mG3mBuaxuthLKsFacXDcu6CialmSXM/CP8AXT5ifDZsjsve6pXbWphgB09dhX3s/hO71d/ZdzuAIkyRsQOvmD9KBY9EtuzO0tuBbQ/D08bRA9gCdoOmqNNJMjGSlJx9jXuzmRa7Wu0zLqncpr1gNG5LARIO2523qnmYS0SoHiBg6fCp3O7c6T10ieo2qr2Iz3EW8N8cWwLjBdKkzpZzE787xMVJl16xi8VeGLYBERbnMCSX1Erww+HYg7xtvQXmT6EfiMe/LYNZWukGyQDvDIS6ezAksp9RPTYc11bzM4S4O/UM/IHK89Oh3H6UfzJ7dhTjLNnuUMImoaXuEsFDhJ+GPzb77bUn9qAWAPU3GP1S1PtWdNWgKT5KMmWv/aIviLV6AdFzX3YMEgRsPXamrNe0a4vu9FttCkltexJ22ETxuJHnxFZtg8HuIEmmXDq/JZiYjbbilhTezZZOKqPknx+FRlHeprCzBcMjAf8A1Bs3lBn2FC7mCwxmdZB/C91Au3EQgj5GiRx99PhuMR1XkH3U7Gg2OuWrhkppfzAgH3EwKDWx4ZdDRlmKNmxcTD2u8KlFFu1rUiRf8TODqYAx1ImOJqQJmL2+8KXLdwmUtd4eOPHsABvxztSjazlB4bihG4D/ABGfMiPD7j6Gq+UYC59ra9du6lKOVYmQfCR4T12mQJIneKNewvJvs03L7vw28SAbvdrJJBIaW/wj61jfarLHW+e6BBU6gQdOkD8RbYKP5pFaP2WK9xdcXMODdXTbN66qvbYA/esu+lZ35J+R2Ss/sXrtk2yQ7WnIbSdSGBGpY5HUH19a0op2jY5yi030wOe1ptoE2u3BPjXwIPbaT6ldHz5qXs5iLuLvAXPGoIdlAhQoJJ8I6SRJ+ZmhOT5ALwuEuEKAmCQJiNl/Mxnjbg0RySwMJc1XmhlbaysG4wE/GJi3zMHxfyxvQhKVrk9HRlhDjLitjZ/DrOXOatcuq3chXRYUlLRMBSdtvyz/ADeVfe3GZkZuO7tt9nvBbbalIt3WI0s67bwSN+ummTC9rxawyWsPghcttJA7zuy0tJbxKZE8mTEbxXOM7aq+FZL+D7pFKx953jIwOpTsgCsSNpMnyIpuMuXL/fgj+JB4+Ovyp9/fkxvtThTbulSCBOpZ/I6qy/8Ad85mhSYZ9OvSdMxPSjXaGzrY3FJdWadviSQAqXB+A7bTMxsTBqmcXiRY+z6iLBfve7ERr06NfmdtuajJfMztxuoIZ+z3aW5bwz2FGzgK3EMASRJIkdeOlAc17PXlC3XVlF6WQkGHE7lDG8T0nkdN6L9ncodlAZW0vHAlip5ZV6iOvHrzWgdoMBhsRhrdhXvIcPp7gXXsgASNYeHlpA28oHSqyVxVnNGahN0Ya1sqYIpowObWBhu7NsG5t4t5gAgrHG5MzzVjHdh8YoLqq3E/kZX6eSmrPZfs+r3bVtwUa4wUkiQm7bxt+X335HNThF2dOTJFxVi7hbBavYnBkdK0L/2eRMRctjxd25XUBAbcbx8/8zVbtLli21mjwrQFlvaM2e3vXQw1TYpvFXQu0nEtyJmzp/OuDm7+dCyte00LYaQU/ti7pKhzpbkdD5SOtfc4w1+0E70iLiB1hgZU8Fo5286GBa6MmBuegrWwcVZayvNLtkXFtkRdXQ+0ypn+tH+x/ZI4o6mbSuoLvtJJAAHmd+PfehWW5fLBTt1Y+QpzyvNRh07xh92DFtBsWbqZHT15p4peSOWba+Q6v5ALG9m2mkEg3bxAVSCQR4jpmQdtz711h83dP/jkEdLdp2Uf9Cj6UaOStikGJzG6LNoQUtFxbMN8PeOZ7tTPABbqfOmvs92PCqLuGOBRGHhZLT4gsp5m690auOgFNJpMlCMmqe2JVvtBeuDT32ExQ40XF7tz6A3FXf2aqdzKsM7sBbOHvAfA/wAJJXYDVuvzmuc9+xW8W+FvYdAUYKcRhJtQxAO9q47IwEid16+VEcTgzaCWbzC/YbwWr1vxaSNoWNwRtNsmDyOhpoiTKrZqUsNYKEaTp8vqeOnl1jrSycuR3VQH3PIhuT1inPE5A1wC1dMum6vvpZYmBEFtjI6xQ23lq276bKwBG6yI8pkmPmKd/MiCrG7QZ7SlMJaw9oHwm2wcjle8RlmOdtQPyqPJcQqN34VGcqEBPitNvIgxswImGEjaQTVPtcWvXwqgtIhYHkOCPKKpYRlwwkHWzbFAZt+zn8cHoNuDPSjBVpk8rtWtMcM0uXcfeRbhCqniW2p5IG7N5Dn689AIzNVYxIMMZjgSFAWep8JkjbeuMne9dVyvhABMIIHuep+dT5dhiTpgkyPU9aZpVSIucuVy2y1k2BAIJQMPynYe5j1pqy/IQU1OwUHYbTPsB0qrlVnUVHnt+sU5rg/CoMeERXPJ8Tqw43lt1Ym5pk4tEEhbisDHQH1kcEUl5pgY5Gx69R7+da3muBm1G0LJ+tIuPw2oEATydukb/TmjD5kLmi8UqozfMsNtHJH7Vaym1ca2zKAbltSQDwykQymI2g9IjpFMS5XrJMbAAE88jbbknbimDs1lhVg6hFtnUupiULbQdPVxvzv8uKdxoEMjkqMefGmT4IEyBIOk+8f0PrWofw4wyuLuo21Cr8LdSygkknnn9BM0K7QZPcMtc0XE1FVu227yDyEcnxK3kDseIEyFoY17baTvG0yRweJESP8AUU8UqNOX0O+0Opb5TBJoZ51OJ1mGZfCfwDn4d99yRSpmeTXrBlht503YC+wxGoqWJkBQCTEGQqrvG5/pU3abGLipI0ztJEwSAAJkkgwAPKlljjsfH6iaaVCxgcdc0/G6gdQxn6da8+MZjpLHcydbFj7kDZRz8qmFjSNPBJj28zUuEyhVbUdxv8R6HYwoH7mpSbo6oRTb0EMnymCX85X4dIbcalMkq48xv60w4rCYQWluIoB3jaSWAmEBkee5BiR1qzjsDduYayhcG27sVAhSAZknbjxHqIk81SF0KO8HQm3ZB6QAXuHzIkH/AHnn8NUi0tIhOEpPk30SLZgHvmZZ37m2Yb0N1zMH31H0FC8VckwmERvc3XbbqdLgH6CnrJOySsiMzXbjOguFUVRAaYl3bnY9KccpyEWx4VFmfynXcP8AvuREegFac4qNAwwyOd1oytbGFW1bdCyXWnWLZcaIPh+Njqkb7RFEbGMZBq18gqLq7NB6PTZnXZJXJJsmfz2CoJ9WtuQPoaRs0wP2R1AuM6PsQ6aCPcSakpex0qGqkXcJjHe54yXMABj5Dgf6+goX2vwrPxR7KcDv+1Fc0wI0SRWctjqKS0YPisscHiuRgGpr7SYpEYgCl/8AtIUjZRbQM0LNRXFANVTd3r6b1HkgcGiZzRPsybYvBri6lG8UGL07dh8kF8NuNhQW2DI3GDO3dXZii6RcbSB6Ux9iMnXGZgFYDucMJjoWHH670EGGFu4i+TH9qYP4d5ouGa9ccbd6oY+QMif1pmCNGl4nLrpu3h93bsd2YZj3gdm+LvbZgAAcCaxDNO2OPwdg5YjqndOfvrXhZ0aWABjYHVMiDEU5/wAWO2N42jZwy3LQLS9yQGZBwV0mQhPX0rE5mkbfkokvA69mMvuZhcCkpqRVOhQFuYiGlyW4L6ZJc9Y9SN6w/Zu0tp0S0tmRAC+ajwsY/FJPi5IO/lWefwPyR3tXcQxCo33SEf7QFfiZW/BsYkb1peGwTWNRe8biAkoCIZBzBefHx1HlRchFBdtCFk123ev27LkhrN0IxmCoYOVUezoR/wAzahOd4e3hs17i2SQVDb7wWElWA2+e3SZo/kuJwa3Mw1Wy1w37mpxBhS+lAoJ2IJJn9ao9su0OCUKFsML/AISt0hRIJkqSDLbHyPTirKTs5JY41sCdr8bKsoBQFQx9SD1PUbccDypXu3ybYPMkHbzNEe2d1m7tFHjdAIHImSf0qngstuhCYBG0DUpJAH5Zkz7VlJ20F404Jh7sjmrpqtgfGNPnuem3B9Ku4XHlG1bqwaD0IO9BbmaorWmtr3bKoWdRbUwnx79Jgz6e1XsXe1OzMQdW5jofP2/rR5EJYfI55Bi/vbYnlh/3f+laDiQdPh5+lYxk95tQGsLG4czG3AMcb8e5pmw2e4ltu8I67naPOpuLk0Vx5I4YtPz7D5mZ+5fePCeazXMsQ1sE7jYwR1DbbEcjmr93Mrt0FO/MQS2rgxvsBM/OgWOxRCww1J+U9T5g8qfX25FGMXDQMs45mpI7y3GKwbbxAqSZ/DAiB7gfUUzYNW7u1e0W4tqLLi40Kot7h0c7QZHTekrL8se43eWTKD4gdmX36Ebcjy4HFHrqa7ZBGoAeo9ztx9ad7EglHQJxua2bRvAPZe5dAXu8PLW0Rb3em5cc7NcGyKB5gdaR7x1Osb7ge+kaZHpINNa5CCTtpTkhYBPu52UfzEsRO3NfVyq0pnltuNkUDhVB3PuY67daylRRwTqiTJcamHtIYZWdXd31aVYm61tV1GACFtyB11N7HrMbFu9ouANq1OhYn/aKIdWHmBrIB6gChuatfEJbvPbAmArkKCTJ2B8MnzgVHluburBMQ9xysx3jEkTG6g8A7b9az7FjBUVczyxlggcD9qjNlzp0CfMdYPlRXMc8tkEbf50vZf2h0XgGECdv8/T1pZI6Mba2hysZVcDB7kwlptKnaJUgkk8c0Iz4Ad1pMBbYMiSviZmJI5HPPp0p6sZt9oa2oVSG+7JJhRtcElh6hffihXajJmtWkbvUu+EIxQLsRfTSZG4m20R708dMhyuNjb2AxeuzaJ5NkL572rjA/oyn50x5bmlm+rNacMFYq0bFWXkEHcVlH8L870HuDys3UH5lJZbqD1gBgP5acO0HZm89z7RgLy2jfAW+Pw3EP41jh461DJFcjtwyfHRewWc3cRiXFogYeyCrNE636gHyFIXbH7zEpbHnNaGbNrBYYWl2AG/mfMn3NZhl1w38a138MwPrRj7oMu6ZoOVZbCKfQV8ze14CKOYYgIB6UtdqcbpUxU+Q8o60Yr2uwp7w0u/ZGp0zZtRJNBTikqqimcryyWkhPYb14IaaMFkykSTVtsqtL5VPizoeZXQmlSKY+ymZujaFPxbVQzRFB2qhhMSUcMuxBmljKmPOPOA93+8RvGCGU6vlVnC3VW69tzFrErE9A3Sl5s8e6wdzPQ+1FLYV00P8Dbq35TVWQitbGb+GFqx9qu4PMFR2iLK3VVl3O+gtxPpV7t7/AArsWg2Jw9wWkEfckEyxP4Gnb2oFlOYmxdsnGWTdFpgbd9PjAHQ/mHpTfexDZhfFw4y33Q+CyUuW9PuIIZvWaWh3JVXkV8o7QY/LbBtWdBQtqAdS2knnTBHNaz2rz4YfDC60AgKxQ7l3IJS2COpaCT+VW86D5jkFhrfjm5H4U8M+hZhsPlSZn2Hu3Lgu4w6bSCLVgEy3tMneBNxt9tvQpJsRycY0yvlt91RRuXxL6zJhxbBIWWjcFmf5KPOue1luWF22o9GYzAUQCAPQUNzTM2SXaO9cQqgRoSIEDp4dgPKmbKMMcRgmUgd4FLAdY61SznmumLAQC2juW1XYBcEE+PUV0AxHAEH32NO2O7KW7eEsXu8trs3KhYF5g7a3JltMEeOYBaZrM7GYCy/d3ZbSYHQjxahvzIO/06CKKXMc2IuNwyOvdpZCFEt7gju2LbEbjUSPCxEiaHeyiSSplPM8E4dXQbMFf0lt/wClEsry/EEQLNw+UKT9POm7LTZVbYNxVBbT38atxytkRsoP49vTyqdsqxF2Gs2BdgmWa4QSNoM6kE/F0p3FLZCORyfEUrmCv2rgW7buW5EiFmfrTDk9vzkq20gRB9V6GoM1xeIw7rbvLdsqeJm7an1VpMeoYx5UzZfiALcFApKyY3B/KynqtLD3DmhemWLWDEDV4oXSu0EDfbj1PnzVe92Z17TA/wBc/wCU1btY5QRxwf0WucXnMEqJJJgACZEiIrU2FKK0iA4VbCi3akbiX6k/y0Vw96x3TFiJjaOJ9YpX7QHHHDhreHck6SRtqjx7kTP5frSPaxGIa2Wk6X1Lu0bqRq4MmNuI55pkkJNOrr9Qj2q7RMtxlWBbWYj4ZhZiOTv70N7K5i2KvLbLlBcdbeqJgsYG0igWNsNcDJbC+FdbEGQVBAMCfMjievrQ7A3HsnYAhtyrbgx1VhxG+8/WpyfzF8cLh9Te8F2Sw6vfs6GZu7aLzgyp0ruN9P49tvwN5Vj+dvL2N4Pdz6fG3XpVP+0rYMoLjMfwM3gX/iBl/otMtnIL+It98wA8OlQBAA5gDr1pou3ROfyq2q+/9HC9nbZwFzFG+gZW090Yk+ICJ1TqMlgADspoFaK2VtlUD3H3HeQUX7zQAoYgSYJMnYA+9Uswwj2TpvvoHIAhrjA/lE7D+ZiPSYireX5zbdVtS1gLsrA65Bn/AGnGo+JjIgelMnt+4zi+Kfa8jhgM/DYRkKi3dBDkKNEFjtMboSIMevAqcY9SpLs3d3IDgHWyPGzDoBzxyCRSzlXd6+7UPdFxw124diwDSQoHHJ609jJUkNbWJEMDwfQiBTuS/qQUGpfTwI+Ls3rF5Lq+HTDW2XdSB1U9R5++9aj2W7Zi4nhNtX5e1cbQAer2mOxXqU+lBWy0ICFICnc27gDIT5idgfXY+tA8bgrQO+G/8u4Y/XV+9TaT7OmMnHoNdp+0ffMbaNqn42HHsvpUGW3FsAMdvIdTQ3BsF+G2lv1ZtZ+X/pVXE3Hd9KS7Hr0HtWaVaGt3bG5u1hHhHJqjjMxN3w0OuZeMOkuZuN08qsdnMPqaWrmyROiE3J0L/auyUSs7a4ZraO2OXB02rMmyNpO1G9GSSbByZm42Bri7j3PWmW12XmiGG7Ig01MClEzy8xNRqtPGadlyvAoBisodelI4lFkTBti7BpryG6YgiVPSlkYNp4p87EZeSdxtTRYs1fQy5DheitsfwMJH6055Vlyrv3Se6yP2NQYHLUXpRa0AOtM2Tjj9wpbWBwB/r1pN7YYXllGp+hO8HzjqfemJsYo5ah2Nza2OIJ9aWN2PkpozgdmxaU4rGN6qhPic+Z9KEZF2re3ixc4WYjpHl9KO9q2N2SWms/xdjSad2c8YX2Nfb/J1uEYiz8Lb7dKgw+FtFlt2tS7W7JZuQ1wTecewBHsa57MZ2JW1d3SetMOc4W134azspuD/AO5bKA/Wnj7k22pKMhj7C4T7r7bdQXLDl7fdwScPbQlVbTw+w8RiRM7yalxPaTCYTGtaN8vYdJi2dXdsTspIO4jfbcSKBfwc7ZLauNgMQdOttVotsA52a2Z4mNvWfOgP8Q+wOIwl83LQa5h7jEqQJKEmSjgfoetLe2iv4apSrf3/AJNjJs3baKz9/hr+1tz4irdBqO88877EUEt5dctlrRgi2ZXflTsR7GQfr51Q7GZdjcNl669BtN98okm4klSAegUiT8z500Za74g3bxtAC4AtuWBI0SpLe5/astbEyJy+Vff34E3NcpxDNptkhgdjxAn4ielMGQ4YWAAfvLnV4H/SOF+UfOjOOYW0MifM0F/tBiGKELAJ6DgevPtSyyN6R04PTqKtoYVuEAs5Cjn5ASf2/Ss77jCZjmD2LTBbTAtcZGUOXtkalRZmCOpWNjHWVXtP2nvXrpsK5MHxwfiWCGX6GpsjwbYS/bxNsiC6sx0ydMywnkCCZjy3oQT7B6hxb4vwWv4odkrWCYXbDSbzPccXHUEFfi7tfCDqLjgahp22mk3HYYqk6SFcyvkYLK0eYkf4dKOdt83vY++hYKAEUELDhWDPsjjkQwkgxMSdhUtnJGvCUJZJ22IIkmZU8bnkbcddqaiEpq9dCvk2AZrgIUkCtObtl9ntoibFODAMGIMg81Xw+WXMHbcrtrXS2wJIkHqNuOlI+L1sxMEhdyeg5iT68DzO1NFcURlJ5ZfRFXtDh3xD98ylQTAJ4JJJ5iJO+23FDsHgSrQw61svYnM8tTCK1x0S6q3EuK6953ql3YAD8QhuBxJkdayzGYhA/g2EmBzA6Cev+VZq3ZeEqSiaR2DwllPEwB/T9elMOaZtatjYistyXOCTpBiBO3uB/jTN2l7P31wy3nKlWiQD4l1fDq26/OOvnTLHfbFllSdUUM67VKZAP0pLxuYFjOuhmMcq7LMwSKh1ikc60Uji8jLlOLQHxNNHbee6TFtQPXrSNhrwFEbONUGmjJUJODscdbPuTJpq7O2dqR8qzdDAJrQsgxiECIqc6K4+9neY4ItVD+wx5UzPdXrXzvU9Kls61FGaYjM0QxXNvtMi0j5piCWO9CnuNT8jlWO9mr4XOrd0xtVvE5fbccCswyTElXBmn/CZsCBvWTH4pEqdnLczAo3l2FS0NqpLjdqG5vmxVTvRCtDLiO0SJ1oLj+2qjg1mmPzV2Y70OuXyetakjbY843tsx4NCrvam4etKb3I5rjvx61uQfw0xqbP2bmqN/F6qpWsHdIBCNB3HH9amtZdfb4bTmDGw2kciZ5qjbirkSXBvTOC8b00YbtOrpbR1A0rocjk7yrn1BoLhOz+Ku7JaJP8AvIP3arg7CZiF7wWCV9Gtn6jXIopSW6JZJYpacla+pazzKhiD3to/e8so5Y/+Jb855Mbgz04c+wf8UL9oDD45Guhdlur/ALQAcBwfi9+fekjD5RjbQhrLFR0lZHqCGkUey172od4rf8a2rn/UTNF4m/DFj6iC6kn/AFRsOFze24jDAlXklSNKrPLCePbivYe1btCFHrPVj/QULyjMlVAotMT1kqP0GwrnM8+S1v3ZZ+ihhA9STUuEukjoeXElybLGeY/Ssfp/Wsl7VdoLinurBJdtzG+kefp70y51n9xgf/d2k/zrSPlGHupiDddTLTv4TBkRAnp/hRjgm5bQZ+sxRx/K7YMwmXX0uhnBkmSfUnrWg4jG6cOFYmBuOsHzg0MNhiNAEk6eJgQACfEx3aJPSTttwwv2XuvZkjaKeUHF0jlhnjONyoRMDima4wVj4xpYwBKyDpMcjYc+XFaj2Qwa2oduY/wpA+xfZmMKSfl/Wi2A7Ud34msG6fW6EUf8MH6k1nBpbJKcMktNJGj4/DDEqSqz+i/X+lJ2a/w0vX+cQlsDhFUso/Ub+vJ865ufxKvBdsEfYXVO3yWr+V9t7t2f/dSCBMd4P8RvUp8q2qOzDDDF3ytmbdrOyGLwABuEXLTHSLiTsegcHj0mfcVTyDJLd+1euPfVCi6lDGC5/Kv83+uJIcO2/wDEFbuHu4dsOR3ildWsHSejRp3gweazLBeIwrc7RwT6eRpoS9x8kE1cS3l2LNm4W38pHIgggj6eY96cMx7f4i5aKPiCyMI0BUHHqFB+p/vClR8LtVF8ORV1I5nBSZUzG/qYtxJJqj3hq/fwxPSoLeDYniuSfZ2wpIiVzXfeNR3B5KSNxXzE5VApaYHNWBrWLZTzT/2KzwyATSDdwxmiuS3DbM0aYWo9mtY3MjEg1Q/ttvOll86kRUP9oiqJE3KxatXNXNee2KIYbLYqd8smpPsokBtUcURyfFnUJNStlJqu2GNreniBoeLdzwjegXaG4dNC7GekbTXzMMeHWiABMd65NfGberC4K4QW0woEyfDsPKeflQseilctEnp5Vzcw56b+8D/GrOEukGQASZ59asW7xe4in84Ee7CaWrYW6VjTYwF0Ko9h/T9qv4TDXFiJgmSBIBkCTt8q+DGEn/i/YVfweKJj5fqIr7qjBqmrPLTnkW0XbWFuaVa34WTcevmKdcjzAhBdPw8XR+Xpr+XX036UuYDE0fyzEaWkcNS5/mjRDA3GabDeZZSt0SkBuY6N7Un4/K2UmRB9qY8Li+5cWGP3bybLeUCWt+6jcDqvqpm/iHR/BdA9G/Yz5VzYsso6e0dXqfTQb5R0/wCwmWXcCJofjEYnmmTNMsa3uACp69KA4mOn0roXF7RzOWSPysCYq8y9T8v8RXWDzBDs0ft/lXWJKnn94PyNUnsJ/qJ+nWjpDOLmtjPl+LsgzsPeiOMzyV0B4FJViyBw231/TpX3FW56xSvi3sEcLjFqLCN/DMxkNNVLtgjlR7xH6ih6vcXcN9KsWsyfqQff+op+UGS/ByrpnlwSE8Ee29HcPh4SQeN6EriAd9v9eoo1l94kRyKjlgmtHV6Wc4y2InbPAeMkcHxD5/5zS3l2FIM1oHavDt3Stp4JX3H/AK/vSjaLREGB6V8txpnpIyuIz5d2evYi2b9tA6AkMFPiVgAW8PMbztPNVcTlixR3+FWdGzeuWn2S4uoT0dP6qT9BUvbK7b+0sbcQwDGPzGZ+sT86ym7of8JcbFqzli9RUwy62N4FfGxMVBdxk8UewVRO7AbChWPuVZtkk1WzC1RQjiCbkVwDXN2RURejoxPrr3eGq3eV97ytZqGG1jBVpMWKUftRFSWsYxMCSfIbn6ColhvXEihWd3wVrjCZfi34tMB5tCf90GiVvslccfe3Avoo1H6mAP1rWjPYis29E8vyu9dggaUP4m2Hy6mmq52ewtgAlS7Ty5n9BA/ShmIzYs+3A4FDl7DKPuMeRdlcNbhnJd/M7fQdKF9tcPaRfANyY5J/c1Hhs+PU+lUM9um9Eb1kN0LSIQYIPyq3lW11GaQoMkwTwDHHrFdLg735Sal7m8vNt/1pk0nZOUHJNDEmaWQPi3AP4X5gx086nw2fWABPeTp38J+PfcHTAXjaCed+tKRxhGxVgfUkV0My/lP941efqZy+n5HNj9Djher/AD/4aDgu1GGEFnPAmLdzkjf8NGMJ20wIG91tjt9ze4/uVlH9qfyn+8a+f2mfI/U0z9ZNqvv/ACQ/8rFd2/1/Y2rFdtssvWjbe/cU7MrrYvakdTKOv3fINV8v/iDhGthb7sriRK2bxWQfiSEkI/Ok7rJ8t8cOZv6/U18OZXPM/U1NZmnZaXoYOPF/f9jb8F/EXBjwu1xlP/ybx/8AwobnXaHL38Vm5dM9DYvCPmUrIxmV38x+prr+07v5m+pqi9TK7IP+G4+PG3+v7Dli84tHpcP/ACrn/wCtVDmg/JdP/Kef+2lN8yu/nb6mvfb7v52/vGi/VSY0f4fBLz+v7DaMe0yEve/dXJ+ump/t7Eb2r3uLT/tFJgx10/jb6mrNnGXfzt/eND4hh+CiHnxLg7W73/luP3FfRiHPNq6fUW2n9qGrjLnW4/zY/wBakGPuCDrbbfcyPmDsfY0PiGN8HEum/dB2tXz/AMpwf2oxlOauNjau/O2w/wAKWr2dX/zJ/wCTZ/8A51DZx96STcbffY6R8lEAew2o/EM3wcPYd80xpe26d1d8W4Og8x19JAPHnS9g8HdmDbcTx4Tv7bUPu5nd/O39419s5jcn42+pqTkmWjjcdIbsuym8GDMptoDuz+DbrAO5MTwKXcfmBLEkyeJ9tqpY3NjJAuFtueN+o5oHicXNJSK2wpezCu8NjB1peN+vn2g1mwUxxTHrXN7GqaUftJr32k0AhXHXh0oeblQNdJrnVRsHEn1V7VUGqvTRs3E02z2UwifgLnzck/px+lELXd2xCKq/7oA/QVJe60Ou9a57sskEFxAbr6V8xGZaV5obhv6VRzH/AF9KyDQPzzMS0/Ol/XVzMqHiqIDJA5q5hMTuJqgK7t80TIf8hxtsEEgH33NP2XXLVwDwCD6CshyetHyPgUlspSoYMw7MYS+kPaSD1AAP1rKe138NcRYJfDq1+1zCibie68sPUVsuF6VZt80zEPyu9ogkEQRsQdiPcHiuSK1z+Mv4fcftWT3KWxqI9VeBr1eFEFHt69NdV40QUcc1IiVwKmSsCie2BUmqolr1YFFlbteN2q9eNYJK1yvC7UJqNq1gLL36r3bhPWuDXw0bA0R71C5qc1Xei2Cjma9NfK9QDR9mvTXq9WBR6a+zXyvVgnU16vlfawD/2Q==" alt="Card image cap">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Internet for Enterprises
+            </h5>
+            
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+    </div>
+    
+  <div class="col-md-6 col-sm-12 col-lg-3 col-xl-3 mt-4">
+
+    <div class="card" style="width:100%"data-aos="fade-up"
+    data-aos-duration="3000">
+      <img class="card-img-top" src="https://oneringnetworks.com/wp-content/uploads/2018/08/internet-speed-speed-test-One-Ring-Networks.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">High Speed Broadband</h5>
+
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+
+</div>
+<div class="col-md-6 col-sm-12 col-lg-3 col-xl-3 mt-4">
+
+  <div class="card" style="width:100%"data-aos="fade-up"
+  data-aos-duration="3000">
+    <img class="card-img-top" src="https://www.pymnts.com/wp-content/uploads/2019/12/merchant-service-providers-Endava-value-added-services.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Value Added Services
+      </h5>
+
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+
+</div>
+<div class="col-md-6 col-sm-12 col-lg-3 col-xl-3 mt-4"data-aos="fade-up"
+data-aos-duration="3000">
+
+  <div class="card" style="width:100%">
+    <img class="card-img-top" src="https://sectigostore.com/blog/wp-content/uploads/2020/05/network-security-best-practices.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Network Security</h5>
+
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+
+</div>
+<div class="col-md-6 col-sm-12 col-lg-3 col-xl-3 mt-4"data-aos="fade-up"
+data-aos-duration="3000">
+
+  <div class="card" style="width:100%">
+    <img class="card-img-top" src="https://www.align.com/hs-fs/hubfs/2019%20Blog%20Images/1801-1000x470.png?width=1200&name=1801-1000x470.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Wi-Fi Hotspot</h5>
+
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+
+</div>
+<div class="col-md-6 col-sm-12 col-lg-3 col-xl-3 mt-4"data-aos="fade-up"
+data-aos-duration="3000">
+
+  <div class="card" style="width:100%">
+    <img class="card-img-top" src="https://images.livemint.com/img/2019/08/31/600x338/Forbes-2-Dr-Maram-LM_1566382048666_1567251996054.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Developer Tie-up
+      </h5>
+
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+
+</div>
+<div class="col-md-6 col-sm-12 col-lg-3 col-xl-3 mt-4"data-aos="fade-up"
+data-aos-duration="3000">
+
+  <div class="card" style="width: 100%;">
+    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA-wMo4WGpUWEskMIM4n6_Sw_LfpYgrtsPhw&usqp=CAU" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" >FTTB, FTTN, FTTH</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+
+</div>
+
+ 
+    </div>
+  </div>
+  <br><br>
+</section>
+  <!--------- plannnnnnnn------------------>
+
+  <style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 30%;
+      border-radius: 5px;
+	  
+    }
+    
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    
+    img {
+      border-radius: 5px 5px 0 0;
+    }
+    
+    .container {
+      padding: 2px 10px;
+    }
+    h4{
+        font-weight: bold;
+    }
+    p{
+        font-size:17px;
+        font-weight: 900px;
+        
+
+    }
+    .card{
+        width: 100%;
+		
+  
+    }
+    p{
+      color:grey;
+    }
+	.card:hover{background-color: rgb(142, 225, 240);}
+
+
+.card,h4{color: rgb(212, 96, 50);}
+
+.card{border-radius: 2rem;}
+
+    </style>
+<div class="container mt-5">
+
+
+   <header style="font-size:2rem;text-align:center;color: brown;  
+    "data-aos="fade-up"
+     data-aos-duration="3000">BROADBAND PLANS
+     <hr style="border: #6E2C00;border: 0.1pc solid #6E2C00;width:25rem;margin-top:-0.2rem;"data-aos="fade-up"
+	  data-aos-duration="3000">
+
+   <h2 style="margin-top:-0.4rem;font-size:2rem;text-align: center;color: brown;
+   "data-aos="fade-up"
+     data-aos-duration="3000">Showing Best Broadband Plans for INDIA</h2></header> 
+       
+
+<div class="row ">
+
+<div class="col-md-6 col-sm-12 col-lg-4 col-xl-4 "style="margin-top: 4%;" class=" zoomIn" id="pricing">
+
+    <div class="card"data-aos="fade-right" style="text-align: center;">
+  
+  <br>
+        <h2>Aleonsolution</h2> 
+        <p>50 Mbps Speed</p> 
+        <p>750 GB Speed</p> 
+        <p>512 Kbps Post FUP Speed</p> 
+  <h4 style="border: 0.1px solid red;
+  width: 70%;margin-left: auto;margin-right: auto;"></h4>
+
+        <h4 style= "margin-top:2%;">12 months</h4> 
+  
+        <p>GET for  <span style="color: red">&#x20b9;</span>844 / month*</p> 
+        <h4 style="border: 0.1px solid red;
+  width: 70%;margin-left: auto;margin-right: auto;"></h4>
+
+        <h4 style= "margin-top:2%;">24 months</h4> 
+  
+          <p>GET for  <span style="color: red">&#x20b9;</span>1600 / month*</p> 
+    <h4 style="border: 0.1px solid red;
+    width: 70%;margin-left: auto;margin-right: auto;"></h4>
+          <h4 style= "margin-top:2%;">36 months</h4> 
+          
+          
+          <p>GET for <span style="color: red">&#x20b9;</span>2400 / month*</p> 
+          <br>
+          <div style="display: flex;">
+          
+          <p><img src="https://dimg.voot.com/si-images/VIacom_680x340_Voot.jpg" alt="Girl in a jacket" width="100%" height="auto">
+          </p>
+          
+          <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Zee5_Official_logo.svg/1200px-Zee5_Official_logo.svg.png" alt="Girl in a jacket" width="100%" height="auto">
+          </p>
+          
+          <p><img src="https://w7.pngwing.com/pngs/53/610/png-transparent-hungama-digital-media-entertainment-bollywood-hungama-music-video-bollywood-miscellaneous-angle-rectangle.png" alt="Girl in a jacket" width="100%" height="auto">
+          </p>
+       </div>
+   </div>
+</div>
+
+
+   <div class="  col-md-6 col-sm-12 col-lg-4 col-xl-4 "style="margin-top: 4%;">
+    <div  class="card " data-aos="fade-left " 
+    data-aos-duration="500"  style="text-align: center;"><br>
+        <h2 >Aleonsolution</h2> 
+        <p>100 Mbps Speed</p> 
+        <p>750 GB Speed</p> 
+        <p>512 Kbps Post FUP Speed</p> 
+        <h4 style="border: 0.1px solid red;
+  width: 70%;margin-left: auto;margin-right: auto;"></h4>
+
+        <h4 style= "margin-top:2%;">12 months</h4> 
+       
+        <p>GET for  <span style="color: red">&#x20b9;</span>1688 / month*</p> 
+  <h4 style="border: 0.1px solid red;
+  width: 70%;margin-left: auto;margin-right: auto;"></h4>
+
+        <h4 style= "margin-top:2%;">12 months</h4> 
+  
+          <p>GET for  <span style="color: red">&#x20b9;</span>3260 / month*</p> 
+    <h4 style="border:0.1px solid red;
+    width: 70%;margin-left: auto;margin-right: auto;"></h4>
+          <h4 style= "margin-top:2%;">12 months</h4> 
+          
+          
+          <p>GET for <span style="color: red">&#x20b9;</span>4550 / month*</p> 
+          <br>
+          <div style="display: flex;">
+          
+          <p><img src="https://dimg.voot.com/si-images/VIacom_680x340_Voot.jpg" alt="Girl in a jacket" width="100%" height="auto">
+          </p>
+          
+          <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Zee5_Official_logo.svg/1200px-Zee5_Official_logo.svg.png" alt="Girl in a jacket" width="100%" height="auto">
+          </p>
+          
+          <p><img src="https://w7.pngwing.com/pngs/53/610/png-transparent-hungama-digital-media-entertainment-bollywood-hungama-music-video-bollywood-miscellaneous-angle-rectangle.png" alt="Girl in a jacket" width="100%" height="auto">
+          </p>
+       </div>
+   </div>
+  </div>
+
+   <div class="col-md-6 col-sm-12 col-lg-4 col-xl-4 "style="margin-top: 4%;">
+    <div class="card " data-aos="fade-up"style="text-align: center;"><br>
+        <h2 >Aleonsolution</h2> 
+        <p>150 Mbps Speed</p> 
+        <p>750 GB Speed</p> 
+        <p>512 Kbps Post FUP Speed</p> 
+        <h4 style="border: 0.1px solid red;
+  width: 70%;margin-left: auto;margin-right: auto;"></h4>
+
+        <h4 style= "margin-top:2%;">12 months</h4> 
+  
+        <p>GET for  <span style="color: red">&#x20b9;</span>2488 / month*</p> 
+        <h4 style="border:0.1px solid red;
+  width: 70%;margin-left: auto;margin-right: auto;"></h4>
+
+        <h4 style= "margin-top:2%;">12 months</h4> 
+  
+          <p>GET for  <span style="color: red">&#x20b9;</span>4544 / month*</p> 
+    <h4 style="border:0.1px solid red;
+    width: 70%;margin-left: auto;margin-right: auto;"></h4>
+          <h4 style= "margin-top:2%;">12 months</h4> 
+          
+          
+          <p>GET for <span style="color: red">&#x20b9;</span>8444 / month*</p> 
+          <br>
+          <div style="display: flex;">
+          
+          <p><img src="https://dimg.voot.com/si-images/VIacom_680x340_Voot.jpg" alt="Girl in a jacket" width="100%" height="auto">
+          </p>
+          
+          <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Zee5_Official_logo.svg/1200px-Zee5_Official_logo.svg.png" alt="Girl in a jacket" width="100%" height="auto">
+          </p>
+          
+          <p><img src="https://w7.pngwing.com/pngs/53/610/png-transparent-hungama-digital-media-entertainment-bollywood-hungama-music-video-bollywood-miscellaneous-angle-rectangle.png" alt="Girl in a jacket" width="100%" height="auto">
+          </p>
+       </div>
+   </div>
+  </div>
+
+  <div class="col-md-6 col-sm-12 col-lg-4 col-xl-4 "style="margin-top: 4%;">
+    <div class="card " data-aos="fade-up"style="text-align: center;"><br>
+        <h2 >Aleonsolution</h2> 
+        <p>150 Mbps Speed</p> 
+        <p>750 GB Speed</p> 
+        <p>512 Kbps Post FUP Speed</p> 
+        <h4 style="border: 0.1px solid red;
+  width: 70%;margin-left: auto;margin-right: auto;"></h4>
+
+        <h4 style= "margin-top:2%;">12 months</h4> 
+  
+        <p>GET for  <span style="color: red">&#x20b9;</span>2488 / month*</p> 
+        <h4 style="border:0.1px solid red;
+  width: 70%;margin-left: auto;margin-right: auto;"></h4>
+
+        <h4 style= "margin-top:2%;">12 months</h4> 
+  
+          <p>GET for  <span style="color: red">&#x20b9;</span>4544 / month*</p> 
+    <h4 style="border:0.1px solid red;
+    width: 70%;margin-left: auto;margin-right: auto;"></h4>
+          <h4 style= "margin-top:2%;">12 months</h4> 
+          
+          
+          <p>GET for <span style="color: red">&#x20b9;</span>8444 / month*</p> 
+          <br>
+          <div style="display: flex;">
+          
+          <p><img src="https://dimg.voot.com/si-images/VIacom_680x340_Voot.jpg" alt="Girl in a jacket" width="100%" height="auto">
+          </p>
+          
+          <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Zee5_Official_logo.svg/1200px-Zee5_Official_logo.svg.png" alt="Girl in a jacket" width="100%" height="auto">
+          </p>
+          
+          <p><img src="https://w7.pngwing.com/pngs/53/610/png-transparent-hungama-digital-media-entertainment-bollywood-hungama-music-video-bollywood-miscellaneous-angle-rectangle.png" alt="Girl in a jacket" width="100%" height="auto">
+          </p>
+       </div>
+   </div>
+  </div>
+
+  <div class="col-md-6 col-sm-12 col-lg-4 col-xl-4 "style="margin-top: 4%;">
+    <div class="card " data-aos="fade-up"style="text-align: center;"><br>
+        <h2 >Aleonsolution</h2> 
+        <p>150 Mbps Speed</p> 
+        <p>750 GB Speed</p> 
+        <p>512 Kbps Post FUP Speed</p> 
+        <h4 style="border: 0.1px solid red;
+  width: 70%;margin-left: auto;margin-right: auto;"></h4>
+
+        <h4 style= "margin-top:2%;">12 months</h4> 
+  
+        <p>GET for  <span style="color: red">&#x20b9;</span>2488 / month*</p> 
+        <h4 style="border:0.1px solid red;
+  width: 70%;margin-left: auto;margin-right: auto;"></h4>
+
+        <h4 style= "margin-top:2%;">12 months</h4> 
+  
+          <p>GET for  <span style="color: red">&#x20b9;</span>4544 / month*</p> 
+    <h4 style="border:0.1px solid red;
+    width: 70%;margin-left: auto;margin-right: auto;"></h4>
+          <h4 style= "margin-top:2%;">12 months</h4> 
+          
+          
+          <p>GET for <span style="color: red">&#x20b9;</span>8444 / month*</p> 
+          <br>
+          <div style="display: flex;">
+          
+          <p><img src="https://dimg.voot.com/si-images/VIacom_680x340_Voot.jpg" alt="Girl in a jacket" width="100%" height="auto">
+          </p>
+          
+          <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Zee5_Official_logo.svg/1200px-Zee5_Official_logo.svg.png" alt="Girl in a jacket" width="100%" height="auto">
+          </p>
+          
+          <p><img src="https://w7.pngwing.com/pngs/53/610/png-transparent-hungama-digital-media-entertainment-bollywood-hungama-music-video-bollywood-miscellaneous-angle-rectangle.png" alt="Girl in a jacket" width="100%" height="auto">
+          </p>
+       </div>
+   </div>
+  </div>
+
+  <div class="col-md-6 col-sm-12 col-lg-4 col-xl-4 "style="margin-top: 4%;">
+    <div class="card " data-aos="fade-up"style="text-align: center;"><br>
+        <h2 >Aleonsolution</h2> 
+        <p>150 Mbps Speed</p> 
+        <p>750 GB Speed</p> 
+        <p>512 Kbps Post FUP Speed</p> 
+        <h4 style="border: 0.1px solid red;
+  width: 70%;margin-left: auto;margin-right: auto;"></h4>
+
+        <h4 style= "margin-top:2%;">12 months</h4> 
+  
+        <p>GET for  <span style="color: red">&#x20b9;</span>2488 / month*</p> 
+        <h4 style="border:0.1px solid red;
+  width: 70%;margin-left: auto;margin-right: auto;"></h4>
+
+        <h4 style= "margin-top:2%;">12 months</h4> 
+  
+          <p>GET for  <span style="color: red">&#x20b9;</span>4544 / month*</p> 
+    <h4 style="border:0.1px solid red;
+    width: 70%;margin-left: auto;margin-right: auto;"></h4>
+          <h4 style= "margin-top:2%;">12 months</h4> 
+          
+          
+          <p>GET for <span style="color: red">&#x20b9;</span>8444 / month*</p> 
+          <br>
+          <div style="display: flex;">
+          
+          <p><img src="https://dimg.voot.com/si-images/VIacom_680x340_Voot.jpg" alt="Girl in a jacket" width="100%" height="auto">
+          </p>
+          
+          <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Zee5_Official_logo.svg/1200px-Zee5_Official_logo.svg.png" alt="Girl in a jacket" width="100%" height="auto">
+          </p>
+          
+          <p><img src="https://w7.pngwing.com/pngs/53/610/png-transparent-hungama-digital-media-entertainment-bollywood-hungama-music-video-bollywood-miscellaneous-angle-rectangle.png" alt="Girl in a jacket" width="100%" height="auto">
+          </p>
+       </div>
+   </div>
+  </div>
+  
+</div>
+
+</div>
+
+<br>
+
+<section>
+	<div class="container mt-5 mb-5" data-aos="fade-up"
+	data-aos-duration="3000" id="About">
+		<header class="text-center text-danger font-weight-bolder" style="font-size: xx-large; ">About</header>
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xl-6  mt-5" data-aos="fade-up"
+			data-aos-duration="1000">
+		
+				
+				<p class="mt-5">Sorem ipsum dolor sit amet consectetur adipiscing elit dapibus non apte magna ad suspendisse nec pulvi
+				Sorem ipsum dolor sit amet consectetur adipiscing elit dapibus non apte magna ad suspendisse nec 
+				dolor sit amet consectetur adipiscing elit dapibus non apte magna ad suspendisse dolor sit amet consectetur 
+				adipiscing elit dapibus non apte magna ad suspendisse pulvi dolor sit amet consectetur adipiscing elit dapibus non apte magna ad suspendisse .</p>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xl-6  mt-5 "data-aos="fade-up"
+			data-aos-duration="2000"><img src="E:\Raja\Website\templte\drive\meeting.svg" class="img-fluid"></div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xl-6 mt-5 "data-aos="fade-up"
+			data-aos-duration="2000"><img src="E:\Raja\Website\templte\drive\handshake.svg" class="img-fluid"></div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xl-6  mt-5 ">
+			
+				<p class="mt-5"data-aos="fade-up"
+				data-aos-duration="2000">Sorem ipsum dolor sit amet consectetur adipiscing elit dapibus non apte magna ad suspendisse nec pulvi
+				Sorem ipsum dolor sit amet consectetur adipiscing elit dapibus non apte magna ad suspendisse nec pulvi,
+				Sorem ipsum dolor sit amet consectetur adipiscing elit dapibus non apte magna ad suspendisse nec pulvi
+				Sorem ipsum dolor sit amet consectetur adipiscing elit dapibus non apte magna ad suspendisse nec pulvi.</p>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+
+
+
+<section>
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap');
+    body{
+      padding: 0;
+      margin:0;
+      overflow-x: hidden;
+    }
+    h3{
+      font-size: 32px;
+      font-weight: 700;
+    }
+      .customcolor{
+        background: #00387a;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+  
+      }
+      .customcolor .col-md-3:nth-child(1) .fa{
+        padding-right: 25px;
+      }
+      .customcolor .col-md-3:nth-child(2) .fa,.customcolor .col-md-3:nth-child(3) .fa{
+        padding-right: 10px;
+      }
+      .customcolor ul {
+        list-style-type: none;
+        padding: 20px 10px;
+        margin: 0;
+        /*padding-top: 20px;
+        padding-left: 10px;*/
+      }
+      .customcolor ul li{
+        padding-top: 5px;
+      }
+      .customcolor a{
+        text-decoration: none;
+        color: #fff;
+      }
+      .customcolor a:hover{
+        color:#D35400;
+      }
+      .customcolor span{
+        font-size: 45px;
+        text-transform: uppercase;
+      }
+      .form-control{
+        height: 45px;
+        border-radius: 2px;
+        color: #ddd;
+        margin-bottom: 20px;
+      }
+      .btn-custom{
+        background: #D35400;
+        color: #fff;
+        padding: 10px 23px 10px 23px;
+      }
+      .btn-custom:hover{
+        background:#6E2C00; 
+        color:#fff;
+      
+        transition: .3s;
+  
+      }
+      .bottom{
+            background: #002c60;
+            color: #fff;
+            padding-top: 20px;
+  
+      }
+      .bottom ul{
+        list-style-type: none;
+        display: inline-flex;
+      
+      }
+      .bottom ul li{
+        padding-right: 30px;
+        text-align: right;
+      }
+      .bottom a{
+        text-decoration: none;
+        color: #ddd;
+      }
+      .icon .fa{
+        font-size: 30px;
+        cursor: pointer;
+      }
+      .icon .fa:hover{
+        color: #D35400;
+      }
+      @media(max-width: 768px){
+        h3{
+          padding-top: 30px;
+        }
+        .bottom{
+          text-align: center;
+        }
+        .bottom .pull-right{
+          float: right;
+          text-align: center;
+          padding-top: 20px;
+        }
+      }
+      @media(max-width: 450px){
+        .customcolor{
+          text-align: center;
+        }
+        .customcolor .col-md-3:nth-child(1) .fa{
+          padding-right: 15px;
+          text-align: center;
+        }
+        .customcolor .pl-4{
+          padding-left: 0 !important;
+        }
+        .customcolor .pr-4{
+          padding-right: 0 !important;
+        }
+      }
+    </style>
+ 
+    
+  <footer class="customcolor" id="Contact">
+    <div class="container-fluid">
+  
+      <div class="row pl-4 pr-4">
+      <div class="col-md-3">
+        <h1><span class="text-primary">A</span>L<span class="text-danger">E</span>O<span class="text-primary">N</h1>
+        <p>Sorem ipsum dolor sit amet consectetur adipiscing elit dapibus non apte magna ad suspendisse nec pulvi.</p>
+        <p class="pt-3 pb-3">Follow US</p>
+        <div class="icon">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      </div>
+      <div class="col-md-3">
+        <h3>Quick Links</h3>  
+        <ul>
+          <li><a href="#"><i class="fa fa-angle-double-right"></i>About Us</a></li>
+          <li><a href="#"><i class="fa fa-angle-double-right"></i>Link</a></li>
+          <li><a href="#"><i class="fa fa-angle-double-right"></i>Plans</a></li>
+          <li><a href="#"><i class="fa fa-angle-double-right"></i>Business User</a></li>
+          <li><a href="#"><i class="fa fa-angle-double-right"></i>Speed Test</a></li>
+          <li><a href="#"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h3>Company</h3>
+       
+        
+        
+        <ul>
+          <li><a href="#"><i class="fa fa-angle-double-right"></i>Mumbai Office: 218, Ecstasy Business Park, Near-Citi Of Joy, JSD Road, Mulund (West), Mumbai-400080</a></li><hr style="border: 0.5px solid white;"> 
+          <li><a href="#"><i class="fa fa-angle-double-right"></i> Uttar Pradesh Office: D-23, near HCL, Buddh Vihar, D Block, Sector 11, Noida, Uttar Pradesh 201301</a></li>
+         <!-- <li><a href="#"><i class="fa fa-angle-double-right"></i>Link</a></li>
+          <li><a href="#"><i class="fa fa-angle-double-right"></i>Link</a></li>
+          <li><a href="#"><i class="fa fa-angle-double-right"></i>Link</a></li>
+          <li><a href="#"><i class="fa fa-angle-double-right"></i>Link</a></li>-->
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h3 class="pb-4">Subscribe</h3>
+        <form action="#">
+          <div class="form-group">
+           
+            <input type="email" class="form-control" placeholder="Name">
+          </div>
+          <div class="form-group">
+            
+            <input type="text" class="form-control" placeholder="Email Address">
+          </div>
+          
+          <button type="submit" class="btn btn-custom">Submit</button>
+        </form>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <div class="bottom">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8">© Copyright 2021 Aleon.InDesigned By<a href="" class="pl-2">Aleonsolution</a></div>
+      <div class="col-md-4 pull-right">
+        <ul>
+          <li><a href="#">Terms of Service </a></li>
+          <li><a href="#">Privacy Policy </a></li>
+          <li><a href="#">Site Map</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</section>
+
+   
+
+    
+
+     
+
+  
+  
+      <!-----------end service----------->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
